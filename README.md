@@ -62,7 +62,7 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 
 Ya puedes usar apps actuales desde el móvil antiguo.
 
-> ⚠️ **Character.ai:** la app **no funcionará** en este entorno. Usa la versión web desde el navegador: <https://character.ai/>
+> ⚠️ **Character.ai:** la app **no funcionará** en este entorno. Usa la versión web (<https://character.ai/>) desde el navegador: 
 > Navegadores recomendados: **Chrome** o **[Cromite](https://github.com/uazo/cromite)**.
 
 ---
