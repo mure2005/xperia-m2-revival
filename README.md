@@ -14,7 +14,8 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 2. [Método A: usando un móvil actual](#-método-a-usando-un-móvil-actual)
 3. [Método B: usando un PC con Linux + QEMU](#-método-b-usando-un-pc-con-linux--qemu)
 4. [Cómo crear el puente `br0`](#-cómo-crear-el-puente-br0)
-5. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
+5. [¿No puedes hacer `br0`? Alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale)
+6. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
 
 ---
 
@@ -26,7 +27,7 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 | Móvil actual con app de máquinas virtuales | ✅ | ❌ |
 | PC con Linux | ❌ | ✅ |
 | QEMU | ❌ | ✅ |
-| Puente de red `br0` | ❌ | ✅ |
+| Puente de red `br0` (o [Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale) si no puedes) | ❌ | ✅ |
 | [EasyControl (fork)](https://github.com/daitj/Easycontrol) en el móvil antiguo | ✅ | ✅ |
 | Tailscale (opcional, para acceso desde fuera de casa) | opcional | opcional |
 
@@ -77,6 +78,7 @@ sudo apt install qemu-system
 ### Paso 2: preparar y lanzar la VM
 
 1. Asegúrate de tener creado el puente de red **`br0`** (mira la [sección siguiente](#-cómo-crear-el-puente-br0)). Sin él, el script **no te dejará continuar**.
+   - ¿No puedes crear `br0` (por ejemplo, porque vas por Wi-Fi)? Salta a la [alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale).
 2. Ejecuta el script de QEMU (el que se comparte aparte).
 
 ### Paso 3: conectar el PC con la VM por ADB
@@ -165,6 +167,99 @@ sudo ip link set dev tap0 up
 ```
 
 Por último, **reinicia**.
+
+---
+
+## 🔐 ¿No puedes hacer `br0`? Alternativa con Tailscale
+
+Si no puedes crear el puente (vas por Wi-Fi, tu router o tu sistema no te dejan, o simplemente no quieres pelearte con la red), **Tailscale** te salva: crea una red privada entre tus dispositivos y cada uno recibe una IP tipo `100.x.y.z`. Sin puentes, sin `br0`, sin dramas. 🎭
+
+### Antes de empezar
+
+- Crea una cuenta en <https://tailscale.com> (sirve la de Google, Microsoft o GitHub).
+- Inicia sesión **con la misma cuenta** en todos los dispositivos que vayas a conectar.
+
+### Opción 1: Tailscale dentro de la VM y en el móvil antiguo
+
+Es la más sencilla si tu VM es **Android** (por ejemplo, Android x86), porque la VM tiene su propia IP de Tailscale.
+
+1. **En la VM Android:** instala Tailscale desde la Play Store o con el APK, e inicia sesión.
+2. **En el móvil antiguo (Xperia M2):** instala Tailscale e inicia sesión con la misma cuenta.
+3. En la VM, activa la **depuración ADB en red** (puerto `5555`).
+4. Mira la IP de Tailscale de la VM dentro de la app (algo como `100.x.y.z`).
+5. En el Xperia M2, abre **EasyControl (fork)**, pulsa **`+`** y escribe esa IP de Tailscale.
+6. Acepta la conexión en la VM. ✅
+
+### Opción 2: Tailscale en el PC y en la VM (mismo flujo del Método B, sin `br0`)
+
+Es el mismo proceso del [Método B](#-método-b-usando-un-pc-con-linux--qemu), pero usando las **IPs de Tailscale** en lugar de la IP del puente. La VM y el PC se ven entre sí aunque la VM vaya con red NAT normal de QEMU.
+
+1. **En el PC (Linux):** instala Tailscale e inicia sesión:
+
+   ```bash
+   curl -fsSL https://tailscale.com/install.sh | sh
+   sudo tailscale up
+   ```
+
+2. **En la VM (Android x86):** instala Tailscale e inicia sesión con la **misma cuenta**.
+3. En la VM, activa la **depuración ADB en red** (puerto `5555`) y apunta su IP de Tailscale (`100.x.y.z`).
+4. En tu PC, conecta ADB usando esa IP de Tailscale:
+
+   ```bash
+   adb connect IP_TAILSCALE_DE_LA_VM:5555
+   ```
+
+5. Redirige el puerto con `socat`:
+
+   ```bash
+   socat TCP-LISTEN:5556,reuseaddr,fork TCP:IP_TAILSCALE_DE_LA_VM:5555
+   ```
+
+6. **En el móvil antiguo:** abre EasyControl (fork), pulsa **`+`** y escribe la IP del **PC** con el puerto `5556`:
+   - En tu red local: la IP local del PC.
+   - Desde fuera de casa (con Tailscale en el móvil antiguo): la IP de Tailscale del PC (`tailscale ip -4`).
+7. Acepta la conexión en la VM. ✅
+
+> 💡 En el script de QEMU puedes usar la red por defecto (`-netdev user,id=net0 -device e1000,netdev=net0`) y olvidarte de `tap0` y `br0`. Ajusta el modelo de tarjeta a la que ya uses.
+
+### Opción 3: Tailscale solo en el PC + redirección de puerto de QEMU
+
+Úsala si **no puedes instalar Tailscale dentro de la VM**. Aquí el **PC** es el intermediario.
+
+1. **En el PC (Linux):** instala Tailscale e inicia sesión:
+
+   ```bash
+   curl -fsSL https://tailscale.com/install.sh | sh
+   sudo tailscale up
+   ```
+
+2. Mira la IP de Tailscale de tu PC:
+
+   ```bash
+   tailscale ip -4
+   ```
+
+3. **En QEMU**, cambia la red del script para usar red "user" con redirección de puerto, en lugar de `tap0`/`br0`:
+
+   ```bash
+   -netdev user,id=net0,hostfwd=tcp::5555-:5555 \
+   -device e1000,netdev=net0
+   ```
+
+   > Esto manda el puerto `5555` de tu PC al `5555` de la VM. Ajusta el modelo de tarjeta (`e1000`, `virtio-net-pci`...) al que ya uses en tu script.
+
+4. **En el móvil antiguo:** instala Tailscale e inicia sesión con la misma cuenta.
+5. En EasyControl (fork), pulsa **`+`** y escribe la **IP de Tailscale del PC** con el puerto `5555`.
+6. Acepta la conexión en la VM. ✅
+
+> 💡 Con este método **no necesitas `socat`**: la redirección de QEMU ya hace ese trabajo.
+
+### ⚠️ Ojo con Android 5.1
+
+Las versiones actuales de la app de Tailscale pueden **no instalarse en Android 5.1**. Si te pasa:
+
+- Prueba con una **versión antigua** del APK de Tailscale.
+- Si no hay forma, usa el móvil antiguo solo como pantalla en tu red local (con `br0`) y deja Tailscale para dispositivos más modernos.
 
 ---
 
