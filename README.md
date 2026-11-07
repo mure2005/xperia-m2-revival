@@ -184,7 +184,7 @@ Si no puedes crear el puente (vas por Wi-Fi, tu router o tu sistema no te dejan,
 Es la más sencilla si tu VM es **Android** (por ejemplo, Android x86), porque la VM tiene su propia IP de Tailscale.
 
 1. **En la VM Android:** instala Tailscale desde la Play Store o con el APK, e inicia sesión.
-2. **En el móvil antiguo (Xperia M2):** instala Tailscale e inicia sesión con la misma cuenta.
+2. **En el móvil antiguo (Xperia M2):** instala Tailscale, aqui la version compatible con android 5.1 <https://www.apkmirror.com/apk/tailscale-inc/tailscale/tailscale-1-62-0-tcc950c079-ge765ec3ecbe-release/tailscale-1-62-0-tcc950c079-ge765ec3ecbe-2-android-apk-download/> e inicia sesión con la misma cuenta.
 3. En la VM, activa la **depuración ADB en red** (puerto `5555`).
 4. Mira la IP de Tailscale de la VM dentro de la app (algo como `100.x.y.z`).
 5. En el Xperia M2, abre **EasyControl (fork)**, pulsa **`+`** y escribe esa IP de Tailscale.
