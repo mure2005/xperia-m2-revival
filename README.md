@@ -18,7 +18,7 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 6. [Probado en](#-probado-en)
 7. [Fotos](#-Fotos-con-las-pruebas)
 8. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
-9. [Descarga de android](#-descarga-de-android)
+9. [Descarga](#-descarga-de-android)
 
 ---
 
