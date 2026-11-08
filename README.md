@@ -18,7 +18,7 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 6. [Probado en](#-probado-en)
 7. [Fotos](#-Fotos-con-las-pruebas)
 8. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
-9. [Descarga de android 8.1 x86_64](#-descarga)
+9. [Descarga de android 8.1 x86_64](#-descarga-de-android)
 
 ---
 
@@ -311,7 +311,7 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 - **Apps que no funcionan:** las que dependen de comprobaciones estrictas del sistema (como Character.ai) mejor úsalas desde el navegador.
 
 ---
-## ⬇️ Descarga
+## ⬇️ Descarga de android
 - **Descarga Android 8.1 x86_64 aqui**: https://www.mediafire.com/file/33gemzr5u2lsi04/android+8.1.qcow2/file
 
 ## 📜 Créditos
