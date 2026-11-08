@@ -67,7 +67,7 @@ Ya puedes usar apps actuales desde el móvil antiguo.
 > ⚠️ **Character.ai:** la app **no funcionará** en este entorno. Usa la versión web desde el navegador: <https://character.ai/>
 > Navegadores recomendados: **Chrome** o **[Cromite](https://github.com/uazo/cromite)**.
 
-> ⚠️ **el navegador Chrome puede no funcionar en la VM con android 9, en este caso se recomienda **[Cromite](https://github.com/uazo/cromite)**
+> ⚠️ **el navegador Chrome** puede no funcionar en la VM con android 9, en este caso se recomienda **[Cromite](https://github.com/uazo/cromite)**
 
 ---
 
