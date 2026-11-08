@@ -18,7 +18,7 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 6. [Probado en](#-probado-en)
 7. [Fotos](#-Fotos-con-las-pruebas)
 8. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
-9. [Descarga de android 8.1 x86_64](#Descarga)
+9. [Descarga de android 8.1 x86_64](#-Descarga)
 
 ---
 
