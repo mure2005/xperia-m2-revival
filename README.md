@@ -3,7 +3,7 @@
 ![Windows](https://img.shields.io/badge/Windows-XP--11-green)
 ![Android](https://img.shields.io/badge/Android-7--12-green)
 ![Bridge o Tailscale](https://img.shields.io/badge/Bridge--Tailscale-yes-green)
-![Easycontrolfork(adb) o RDP (Windows)](https://img.shields.io/badge/Easycontrolfork--RDP-green)
+![Easycontrolfork(adb) o RDP (Windows)](https://img.shields.io/badge/Easycontrolfork--RDP-yes-green)
 
 Guía para usar un móvil antiguo (Xperia M2 con Android 5.1.1 o similar) como **pantalla y mando** de una máquina virtual Android moderna. El móvil viejo no hace el trabajo pesado: solo muestra y controla lo que ocurre en otro dispositivo más potente.
 
