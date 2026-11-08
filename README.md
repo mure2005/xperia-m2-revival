@@ -16,9 +16,9 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 4. [Cómo crear el puente `br0`](#-cómo-crear-el-puente-br0)
 5. [¿No puedes hacer `br0`? Alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale)
 6. [Probado en](#-probado-en)
-7. [Fotos](#-Fotos-con-las-pruebas)
+7. [Fotos](#-fotos-con-las-pruebas)
 8. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
-9. [Descarga](#-descarga-de-android)
+9. [Descarga de Android](#-descarga-de-android)
 
 ---
 
@@ -72,7 +72,7 @@ Ya puedes usar apps actuales desde el móvil antiguo.
 
 ---
 
-## 🖥️ Método B: usando un PC con Linux + QEMU
+## 💻 Método B: usando un PC con Linux + QEMU
 
 ### Paso 1: instalar QEMU
 
@@ -312,7 +312,7 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 
 ---
 
-## ⬇️ Descarga de android
+## 📥 Descarga de Android
 
 - **Descarga Android 8.1 x86_64 aqui**: https://www.mediafire.com/file/33gemzr5u2lsi04/android+8.1.qcow2/file
 
