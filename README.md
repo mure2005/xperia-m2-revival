@@ -320,4 +320,8 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 
 - [EasyControl (fork)](https://github.com/daitj/Easycontrol)
 - [Cromite](https://github.com/uazo/cromite)
-- QEMU, Tailscale y las apps de VM mencionadas, por sus respectivos autores
+- [QEMU](https://www.qemu.org/)
+- [Tailscale](https://tailscale.com/)
+- [Virtual Master](https://virtualmaster.app/)
+- [VPhoneGaga/VPhoneOS](https://vphoneos.com/)
+- [VMOS](https://www.vmos.com/)
