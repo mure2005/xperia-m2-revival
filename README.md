@@ -16,7 +16,8 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 4. [Cómo crear el puente `br0`](#-cómo-crear-el-puente-br0)
 5. [¿No puedes hacer `br0`? Alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale)
 6. [Probado en](#-probado-en)
-7. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
+7. [Fotos](#-Fotos-con-las-pruebas)
+8. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
 
 ---
 
@@ -275,6 +276,22 @@ Pantalla: Sony Xperia M2 con Android 5.1 como móvil antiguo. Todo funcionando e
 | **Windows 10 Enterprise 2016 LTSB** (MiniOS v2018.01, 32 bits) | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
 
 > 💡 Hasta un Atom N280 con 1 GB de RAM se deja controlar desde el Xperia M2. Y como es una edición **Enterprise**, confirma que estas ediciones funcionan como host de RDP.
+
+## 📷 Fotos con las pruebas:
+
+Windows 11 en QEMU:
+<img width="4096" height="3072" alt="21919" src="https://github.com/user-attachments/assets/e4490099-bd4c-499f-988d-c442379f0935" />
+<img width="4096" height="3072" alt="21918" src="https://github.com/user-attachments/assets/43fa861e-c64b-45eb-8b41-47b9724b1871" />
+
+Windows 10 en pc real: 
+
+<img width="4096" height="3072" alt="21922" src="https://github.com/user-attachments/assets/6462bc63-842c-409b-bf46-268c4bf29629" />
+
+Virtual master en móvil actual ejecutando contenedor de android 12:
+
+<img width="1080" height="2400" alt="21921" src="https://github.com/user-attachments/assets/861588ab-dd45-4882-9903-6f17ba3febc3" />
+<img width="3072" height="4096" alt="21920" src="https://github.com/user-attachments/assets/23bc4d8f-6211-4c7f-9479-3042b610eb3a" />
+
 
 ---
 
