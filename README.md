@@ -15,7 +15,8 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 3. [Método B: usando un PC con Linux + QEMU](#-método-b-usando-un-pc-con-linux--qemu)
 4. [Cómo crear el puente `br0`](#-cómo-crear-el-puente-br0)
 5. [¿No puedes hacer `br0`? Alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale)
-6. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
+6. [Probado en](#-probado-en)
+7. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
 
 ---
 
@@ -260,6 +261,20 @@ Las versiones actuales de la app de Tailscale pueden **no instalarse en Android 
 
 - Prueba con una **versión antigua** del APK de Tailscale.
 - Si no hay forma, usa el móvil antiguo solo como pantalla en tu red local (con `br0`) y deja Tailscale para dispositivos más modernos.
+
+---
+
+## ✅ Probado en
+
+Pantalla: Sony Xperia M2 con Android 5.1 como móvil antiguo. Todo funcionando en la práctica:
+
+| Sistema remoto | Dónde corre | Cómo se controla |
+|---|---|---|
+| **Android 12** | VM en un móvil actual (Virtual Master) | EasyControl (fork) |
+| **Windows 11 Pro 26H2** (build 26300.9457) | VM en QEMU, PC con AMD 3020e y 8 GB de RAM | Escritorio remoto (RDP) |
+| **Windows 10 Enterprise 2016 LTSB** (MiniOS v2018.01, 32 bits) | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
+
+> 💡 Hasta un Atom N280 con 1 GB de RAM se deja controlar desde el Xperia M2. Y como es una edición **Enterprise**, confirma que estas ediciones funcionan como host de RDP.
 
 ---
 
