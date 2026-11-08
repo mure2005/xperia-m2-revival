@@ -1,5 +1,8 @@
 # 📱 Cómo revivir un Xperia M2 con hardware moderno
 
+![Windows](https://img.shields.io/badge/Android-XP--11-green)
+![Android](https://img.shields.io/badge/Android-7-9-11-12-green)
+
 Guía para usar un móvil antiguo (Xperia M2 con Android 5.1.1 o similar) como **pantalla y mando** de una máquina virtual Android moderna. El móvil viejo no hace el trabajo pesado: solo muestra y controla lo que ocurre en otro dispositivo más potente.
 
 Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`bootloader unlock allowed: no`).
