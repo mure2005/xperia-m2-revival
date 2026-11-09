@@ -291,9 +291,20 @@ Windows 11 en QEMU:
 <img width="4096" height="3072" alt="21919" src="https://github.com/user-attachments/assets/e4490099-bd4c-499f-988d-c442379f0935" />
 <img width="4096" height="3072" alt="21918" src="https://github.com/user-attachments/assets/43fa861e-c64b-45eb-8b41-47b9724b1871" />
 
+Debian 13 en QEMU desde mi pc conectado desde fuera de casa (puente br0 + socat + tailscale)
+
+<img width="3072" height="4096" alt="23528" src="https://github.com/user-attachments/assets/492b7956-7991-4880-8d6c-d884a1cf0b96" />
+
+
 Windows 10 en pc real: 
 
 <img width="4096" height="3072" alt="21922" src="https://github.com/user-attachments/assets/6462bc63-842c-409b-bf46-268c4bf29629" />
+
+Windows 7 en pc real desde su IP y socat en kubuntu conectado desde tailscale en la calle
+
+<img width="3072" height="4096" alt="23530" src="https://github.com/user-attachments/assets/d816c409-d084-47ff-ab80-83a7f175d506" />
+<img width="3072" height="4096" alt="23529" src="https://github.com/user-attachments/assets/3d4a59da-fe89-467e-aca5-dd47b40f9602" />
+
 
 Virtual master en móvil actual ejecutando contenedor de android 12:
 
