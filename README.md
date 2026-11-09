@@ -334,6 +334,8 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 
 - **Descarga Android 8.1 x86_64 aqui**: https://www.mediafire.com/file/33gemzr5u2lsi04/android+8.1.qcow2/file
 
+- # **NOTA PARA USAR APPS ARM EN ANDROID X86, NECESITAN ACTIVAR NATIVE BRIDGE PARA PODER ABRIRLAS, SIN ESTO, ALGUNAS NO ABRIRÁN!**
+
 ## 📜 Créditos
 
 - [EasyControl (fork)](https://github.com/daitj/Easycontrol)
