@@ -70,10 +70,11 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 
 Ya puedes usar apps actuales desde el móvil antiguo.
 
-> ⚠️ **Character.ai:** la app **no funcionará** en este entorno. Usa la versión web desde el navegador: <https://character.ai/>
+> ⚠️ **Character.ai:** la app **no funcionará** en este entorno. Usa la versión web desde el navegador: <https://character.ai/>, la app **si funciona** en el android 8.1 x86_64 si activas antes los native bridge en ajustes
+
 > Navegadores recomendados: **Chrome** o **[Cromite](https://github.com/uazo/cromite)**.
 
-> ⚠️ **el navegador Chrome** puede no funcionar en la VM con android 9, en este caso se recomienda **[Cromite](https://github.com/uazo/cromite)**
+> ⚠️ **el navegador Chrome** puede no funcionar en la VM con android 9 (Virtual Master), en este caso se recomienda **[Cromite](https://github.com/uazo/cromite)**
 
 ---
 
