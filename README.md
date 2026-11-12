@@ -328,6 +328,7 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 - **Los comandos `ip`/`brctl` no son permanentes:** si reinicias, el puente puede desaparecer. Si te pasa, vuelve a ejecutar los comandos o conviértelos en un script de arranque.
 - **Remoto con Tailscale:** funciona, pero con más latencia que en tu red local.
 - **Apps que no funcionan:** las que dependen de comprobaciones estrictas del sistema (como Character.ai) mejor úsalas desde el navegador.
+- **SOLO ANDROID 12+ PUEDE TRANSMITIR AUDIO** el audio llega con unos milisegundos de retraso, pero se transmite, te sirve para música, si no te importa el retraso, usalo para música y ver vídeos
 
 ---
 
