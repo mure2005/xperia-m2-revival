@@ -280,7 +280,7 @@ Pantalla: Sony Xperia M2 con Android 5.1 como móvil antiguo. Todo funcionando e
 
 | Sistema remoto | Dónde corre | Cómo se controla |
 |---|---|---|
-| **Android 12** | VM en un móvil actual (Virtual Master) | EasyControl (fork) |
+| **Android 12** | VM en un móvil actual (Virtual Master y audio con reproducción de videos por avc (software) en Youtube) | EasyControl (fork) |
 | **Windows 11 Pro 26H2** (build 26300.9457) | VM en QEMU, PC con AMD 3020e y 8 GB de RAM | Escritorio remoto (RDP) |
 | **Windows 10 Enterprise 2016 LTSB** (MiniOS v2018.01, 32 bits) | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
 **Debian 13** | VM en QEMU, PC con AMD 3020e y 8 GB de RAM | Escritorio remoto (RDP) |
