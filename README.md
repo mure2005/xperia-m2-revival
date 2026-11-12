@@ -314,6 +314,11 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 <img width="1080" height="2400" alt="21921" src="https://github.com/user-attachments/assets/861588ab-dd45-4882-9903-6f17ba3febc3" />
 <img width="3072" height="4096" alt="21920" src="https://github.com/user-attachments/assets/23bc4d8f-6211-4c7f-9479-3042b610eb3a" />
 
+Ahora viendo YouTube con audio transmitido (escuchando desde el Xperia M2)
+
+<img width="3072" height="4096" alt="16132" src="https://github.com/user-attachments/assets/0b4dd3f7-c325-411b-b79a-e46d291e52f4" />
+<img width="1080" height="2400" alt="16131" src="https://github.com/user-attachments/assets/0b3da102-9692-431f-8c16-352b4be550e3" />
+
 
 ---
 
