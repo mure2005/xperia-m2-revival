@@ -329,7 +329,7 @@ Virtual master en móvil actual ejecutando contenedor de android 12:
 - **Remoto con Tailscale:** funciona, pero con más latencia que en tu red local.
 - **Apps que no funcionan:** las que dependen de comprobaciones estrictas del sistema (como Character.ai) mejor úsalas desde el navegador.
 - **SOLO ANDROID 12+ PUEDE TRANSMITIR AUDIO** el audio llega con unos milisegundos de retraso, pero se transmite, te sirve para música, si no te importa el retraso, usalo para música y ver vídeos
-- **VIGILANCIA:** # **⚠️ VIGILA EL CONSUMO DE RAM Y DE BATERÍA, PUES ESTÁS EMULANDO UN SISTEMA ENTERO, RECUERDA QUE TÚ CPU ESTA TRABAJANDO TODO EL TIEMPO SOBRETODO SI VES VIDEOS EN YOUTUBE, UTILIZARÁ AVC POR SOFTWARE**
+- **VIGILANCIA:** **⚠️ VIGILA EL CONSUMO DE RAM Y DE BATERÍA, PUES ESTÁS EMULANDO UN SISTEMA ENTERO, RECUERDA QUE TÚ CPU ESTA TRABAJANDO TODO EL TIEMPO SOBRETODO SI VES VIDEOS EN YOUTUBE, UTILIZARÁ AVC POR SOFTWARE**
 
 ---
 
