@@ -335,7 +335,7 @@ Ahora viendo YouTube con audio transmitido (escuchando desde el Xperia M2)
 - **Apps que no funcionan:** las que dependen de comprobaciones estrictas del sistema (como Character.ai) mejor úsalas desde el navegador.
 - **SOLO ANDROID 12+ PUEDE TRANSMITIR AUDIO** el audio llega con unos milisegundos de retraso, pero se transmite, te sirve para música, si no te importa el retraso, usalo para música y ver vídeos
 - **VIGILANCIA:** **⚠️ VIGILA EL CONSUMO DE RAM Y DE BATERÍA, PUES ESTÁS EMULANDO UN SISTEMA ENTERO, RECUERDA QUE TÚ CPU ESTA TRABAJANDO TODO EL TIEMPO SOBRETODO SI VES VIDEOS EN YOUTUBE, UTILIZARÁ AVC POR SOFTWARE**
-- **SI QUIEREN MEJORAE EL RENDIMIENTO PONGAN MODO AVIÓN EN VIRTUAL MASTER, NO SE OLVIDEN DE DARLE A ENCENDER EL WIFI DENTRO DE LA VM**
+- **SI QUIEREN MEJORAR EL RENDIMIENTO PONGAN MODO AVIÓN EN VIRTUAL MASTER, NO SE OLVIDEN DE DARLE A ENCENDER EL WIFI DENTRO DE LA VM**
 - **consejo para los vídeos:** si van a ver vídeos desde el teléfono antiguo usando la vm del móvil actual, recuerden bajar la calidad de 720p para abajo, si usan **YouTube Morphe/Revanced** pongan la falsificación de transmisión en android studio, de esta forma limitaras los vídeos a **30 fps**
 
 ---
