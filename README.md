@@ -337,6 +337,7 @@ Ahora viendo YouTube con audio transmitido (escuchando desde el Xperia M2)
 - **VIGILANCIA:** **⚠️ VIGILA EL CONSUMO DE RAM Y DE BATERÍA, PUES ESTÁS EMULANDO UN SISTEMA ENTERO, RECUERDA QUE TÚ CPU ESTA TRABAJANDO TODO EL TIEMPO SOBRETODO SI VES VIDEOS EN YOUTUBE, UTILIZARÁ AVC POR SOFTWARE**
 - **SI QUIEREN MEJORAR EL RENDIMIENTO PONGAN MODO AVIÓN EN VIRTUAL MASTER, NO SE OLVIDEN DE DARLE A ENCENDER EL WIFI DENTRO DE LA VM**
 - **consejo para los vídeos:** si van a ver vídeos desde el teléfono antiguo usando la vm del móvil actual, recuerden bajar la calidad de 720p para abajo, si usan **YouTube Morphe/Revanced** pongan la falsificación de transmisión en android studio, de esta forma limitaras los vídeos a **30 fps**
+- **CAMBIEN LA RESOLUCIÓN A 360x640 SI QUIEREN MEJOR RENDIMIENTO Y MENOS PIXELES QUE CODIFICAR/DECODIFICAR**
 
 ---
 
