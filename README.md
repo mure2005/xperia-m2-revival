@@ -285,6 +285,7 @@ Pantalla: Sony Xperia M2 con Android 5.1 como móvil antiguo. Todo funcionando e
 | **Windows 10 Enterprise 2016 LTSB** (MiniOS v2018.01, 32 bits) | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
 **Debian 13** | VM en QEMU, PC con AMD 3020e y 8 GB de RAM | Escritorio remoto (RDP) |
 **Windows 7 Ultimate** | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
+**Windows XP Tablet edition** | VM en QEMU, pc con AMD 3020e y 2 GB de RAM | Escritorio Remoto (RDP) |
 
 > 💡 Hasta un Atom N280 con 1 GB de RAM se deja controlar desde el Xperia M2. Y como es una edición **Enterprise**, confirma que estas ediciones funcionan como host de RDP.
 
@@ -297,6 +298,11 @@ Windows 11 en QEMU:
 Debian 13 en QEMU desde mi pc conectado desde fuera de casa (puente br0 + socat + tailscale)
 
 <img width="3072" height="4096" alt="23528" src="https://github.com/user-attachments/assets/492b7956-7991-4880-8d6c-d884a1cf0b96" />
+
+Windows XP Tablet edition en qemu
+<img width="3072" height="4096" alt="24304" src="https://github.com/user-attachments/assets/062feb26-881b-4b1c-af4a-10850931c970" />
+<img width="3072" height="4096" alt="24303" src="https://github.com/user-attachments/assets/f5191a83-3a0a-49f7-b675-fabdd92166db" />
+
 
 
 Windows 10 en pc real: 
