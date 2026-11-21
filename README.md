@@ -353,6 +353,11 @@ Ahora viendo YouTube con audio transmitido (escuchando desde el Xperia M2)
 
 - # **NOTA PARA USAR APPS ARM EN ANDROID X86, NECESITAN ACTIVAR NATIVE BRIDGE PARA PODER ABRIRLAS, SIN ESTO, ALGUNAS NO ABRIRÁN!**
 
+
+**EL METODO FUNCIONA CON GOOGLE TV XD PUEDES CONTROLAR LA TV Y EL SISTEMA DESDE EL MÓVIL CON EASYCONTROLFORK 😂**
+
+
+
 ## 📜 Créditos
 
 - [EasyControl (fork)](https://github.com/daitj/Easycontrol)
