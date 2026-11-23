@@ -18,12 +18,12 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 1. [Qué necesitas](#-qué-necesitas)
 2. [Método A: usando un móvil actual](#-método-a-usando-un-móvil-actual)
 3. [Método B: usando un PC con Linux + QEMU](#-método-b-usando-un-pc-con-linux--qemu)
-4. [Cómo crear el puente `br0`](#-cómo-crear-el-puente-br0)
-5. [¿No puedes hacer `br0`? Alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale)
-6. [Probado en](#-probado-en)
-7. [Fotos](#-fotos-con-las-pruebas)
-8. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
-9. [Descarga de Android](#-descarga-de-android)
+5. [Cómo crear el puente `br0`](#-cómo-crear-el-puente-br0)
+6. [¿No puedes hacer `br0`? Alternativa con Tailscale](#-no-puedes-hacer-br0-alternativa-con-tailscale)
+7. [Probado en](#-probado-en)
+8. [Fotos](#-fotos-con-las-pruebas)
+9. [Notas y problemas conocidos](#-notas-y-problemas-conocidos)
+10. [Descarga de Android](#-descarga-de-android)
 
 ---
 
@@ -66,7 +66,7 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 8. Al conectarte, **acepta la conexión desde la máquina virtual** (te aparecerá un aviso de depuración ADB).
    - Si falla varias veces, **no pasa nada: sigue intentándolo**. A veces necesita un par de intentos para ponerse de acuerdo. 😅
 
-### 💻 Método C: usando Android Studio (AVD) en PC
+### Método C: usando Android Studio (AVD) en PC
 
 También funciona de maravilla usando los emuladores oficiales de **Android Studio (AVD)** desde **Android 6 hasta Android 13**:
 
