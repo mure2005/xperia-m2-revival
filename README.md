@@ -66,6 +66,22 @@ Así puedes usar apps actuales **sin depender de desbloquear el bootloader** (`b
 8. Al conectarte, **acepta la conexión desde la máquina virtual** (te aparecerá un aviso de depuración ADB).
    - Si falla varias veces, **no pasa nada: sigue intentándolo**. A veces necesita un par de intentos para ponerse de acuerdo. 😅
 
+### 💻 Método C: usando Android Studio (AVD) en PC
+
+También funciona de maravilla usando los emuladores oficiales de **Android Studio (AVD)** desde **Android 6 hasta Android 13**:
+
+1. Crea un dispositivo virtual (AVD) con resolución personalizada (`540x960` o `360x640`) y la versión de Android que prefieras (de la 6 a la 13).
+2. Arranca el emulador en tu PC (automáticamente abrirá un puerto ADB local, normalmente `5554` / `5555`).
+3. Redirige el puerto ADB con `socat` para que sea accesible desde tu red local o Tailscale:
+   ```bash
+   socat TCP-LISTEN:5556,reuseaddr,fork TCP:127.0.0.1:5555
+   ```
+4. Conéctate desde **EasyControl (fork)** en el Xperia M2 usando la IP de tu PC y el puerto `5556`.
+
+💡 **Ventaja:** Al usar los emuladores oficiales con KVM en Linux, el rendimiento es muy fluido y en Android 12/13 tienes transmisión de audio incluida.
+
+
+
 ### ✅ Resultado
 
 Ya puedes usar apps actuales desde el móvil antiguo.
