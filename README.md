@@ -81,6 +81,16 @@ También funciona de maravilla usando los emuladores oficiales de **Android Stud
 💡 **Ventaja:** Al usar los emuladores oficiales con KVM en Linux, el rendimiento es muy fluido y en Android 12/13 tienes transmisión de audio incluida.
 
 
+### Método Extra: usando [Aemulator Plus](https://github.com/somerandomusernam2/AEmulator-Plus/releases/download/v0.0.0.3.16/AEmulator-Plus-app.aemu.plus.apk)
+
+es básicamente el mismo método que virtual master, la diferencia es que en este podrás probar MIUI 9, MIUI 11, ZTE Z10, etc, pero ojo, en este solo funciona la conexión desde Android 6 hasta android 9 (o 10 depende la versión)
+
+solo activen la opción llamada "ADB en red"
+
+<img width="1080" height="2400" alt="30986" src="https://github.com/user-attachments/assets/a1c9667f-05e4-4906-ab11-e51e2e60967d" />
+<img width="1080" height="2400" alt="30981" src="https://github.com/user-attachments/assets/51afba0a-f4ad-47c3-9df6-90d0d74b0186" />
+
+
 
 ### ✅ Resultado
 
