@@ -90,6 +90,7 @@ solo activen la opción llamada "ADB en red"
 <img width="1080" height="2400" alt="30986" src="https://github.com/user-attachments/assets/a1c9667f-05e4-4906-ab11-e51e2e60967d" />
 <img width="1080" height="2400" alt="30981" src="https://github.com/user-attachments/assets/51afba0a-f4ad-47c3-9df6-90d0d74b0186" />
 
+# NOTA: NO TODOS LOS SISTEMAS PERMITEN CONTROLARSE DESDE EASYCONTROLFORK, SE RECOMIENDA USAR [Rustdesk](https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-universal-signed.apk)
 
 
 ### ✅ Resultado
