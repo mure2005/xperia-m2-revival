@@ -313,6 +313,7 @@ Pantalla: Sony Xperia M2 con Android 5.1 como móvil antiguo. Todo funcionando e
 **Debian 13** | VM en QEMU, PC con AMD 3020e y 8 GB de RAM | Escritorio remoto (RDP) |
 **Windows 7 Ultimate** | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
 **Windows XP Tablet edition** | VM en QEMU, pc con AMD 3020e y 2 GB de RAM | Escritorio Remoto (RDP) |
+**hyperOS 3.0.8.0 | VM en Android | Rustdesk |
 
 > 💡 Hasta un Atom N280 con 1 GB de RAM se deja controlar desde el Xperia M2. Y como es una edición **Enterprise**, confirma que estas ediciones funcionan como host de RDP.
 
@@ -351,6 +352,11 @@ Ahora viendo YouTube con audio transmitido (escuchando desde el Xperia M2)
 
 <img width="3072" height="4096" alt="16132" src="https://github.com/user-attachments/assets/0b4dd3f7-c325-411b-b79a-e46d291e52f4" />
 <img width="1080" height="2400" alt="16131" src="https://github.com/user-attachments/assets/0b3da102-9692-431f-8c16-352b4be550e3" />
+
+hyperOS 3.0.8.0 en Aemulator plus controlado desde rustdesk
+
+<img width="3072" height="4096" alt="33710" src="https://github.com/user-attachments/assets/979dc3a7-99fa-45ab-afa1-f3e054e2d84a" />
+<img width="3072" height="4096" alt="33709" src="https://github.com/user-attachments/assets/7ab0e729-bf7d-48fa-bb95-a40a290fa806" />
 
 
 ---
