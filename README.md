@@ -92,6 +92,7 @@ solo activen la opción llamada "ADB en red"
 
 # NOTA: NO TODOS LOS SISTEMAS PERMITEN CONTROLARSE DESDE EASYCONTROLFORK, SE RECOMIENDA USAR [Rustdesk](https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-universal-signed.apk)
 
+# OTRA NOTA: SI NO SOLO QUIEREN APPS ACTUALES Y QUIEREN PROBAR LA MISMA VERSIÓN DE ANDROID (ANDROID 5) EN DISTINTAS CAPAS DE PERSONALIZACIÓN COMO INFINIX, MIUI, TOUCHWIZ, AOSP, MOTOROLA, ETC, TAMBIÉN PUEDEN, SOLO ACTIVEN ADB EN RED O USEN RUSTDESK
 
 ### ✅ Resultado
 
@@ -313,7 +314,7 @@ Pantalla: Sony Xperia M2 con Android 5.1 como móvil antiguo. Todo funcionando e
 **Debian 13** | VM en QEMU, PC con AMD 3020e y 8 GB de RAM | Escritorio remoto (RDP) |
 **Windows 7 Ultimate** | PC real con Intel Atom N280 y 1 GB de RAM | Escritorio remoto (RDP) |
 **Windows XP Tablet edition** | VM en QEMU, pc con AMD 3020e y 2 GB de RAM | Escritorio Remoto (RDP) |
-**hyperOS 3.0.8.0 | VM en Android | Rustdesk |
+**hyperOS 3.0.8.0** | VM en Android | Rustdesk |
 
 > 💡 Hasta un Atom N280 con 1 GB de RAM se deja controlar desde el Xperia M2. Y como es una edición **Enterprise**, confirma que estas ediciones funcionan como host de RDP.
 
